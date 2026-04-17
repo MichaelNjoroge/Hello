@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to HTML Coding</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: lightcyan;
+    margin: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: darkgreen;
+    font-size: 40px;
+  }
+
+  table {
+    width: 50%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+
+  th {
+    background-color: #2c3e50;
+    color: white;
+  }
+
+  tfoot {
+    color: darkgreen;
+    font-weight: bold;
+  }
+
+  form {
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 50%;
+  }
+
+  input, select {
+    padding: 8px;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  
+  input[type="submit"] {
+    background-color: green;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: darkgreen;
+  }
+
+  input[type="reset"] {
+    border-radius: 50px;
+    font-weight: bold;
+  }
+
+  ol, ul {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 25%;
+  }
+
+  h2 {
+    font-weight: bold;
+    color: darkgreen;
+  }
+  
+  h3 {
+    font-weight: bold;
+    color: darkgreen;
+  }
+  
+</style>
+</head>
+
+<body>
+
+<h1>This is my Wonderful Project!!</h1>
+
+<!-- TABLE (no duplicates) -->
+<table>
+  <thead>
+    <tr>
+      <th colspan="8">Family Menu</th>
+    </tr>
+    <tr>
+      <th>S.No.</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Chapati and Beans</td>
+      <td>Rice and Green Grams</td>
+      <td>Ugali and Greens</td>
+      <td>Rice and Beef Stew</td>
+      <td>Ugali and Omena</td>
+      <td>Pilau</td>
+      <td>Omelet</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>Ugali and Greens</td>
+      <td>Ugali and Omelet</td>
+      <td>Pilau</td>
+      <td>Omena</td>
+      <td>Chapati</td>
+      <td>Rice</td>
+      <td>Beans</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td colspan="8">--- This is the end of my Table ---</td>
+    </tr>
+  </tfoot>
+</table>
+
+<!-- PASSWORD FORM -->
+<form action="#" method="post">
+  <input type="password" name="Password" placeholder="Enter five digit Password">
+
+  <input type="reset" value="Reset">
+
+  <input type="submit" name="Submit_Password" value="Submit">
+</form>
+
+<!-- AGE + DETAILS FORM -->
+<form action="#" method="post">
+
+  <h2>Select Age Range</h2>
+
+  <label><input type="radio" name="Age_Range" value="1-7"> 1 to 7 Years</label><br>
+  <label><input type="radio" name="Age_Range" value="8-12"> 8 to 12 Years</label><br>
+  <label><input type="radio" name="Age_Range" value="13-19"> 13 to 19 Years</label><br>
+  <label><input type="radio" name="Age_Range" value="20-39"> 20 to 39 Years</label><br>
+  <label><input type="radio" name="Age_Range" value="40-59"> 40 to 59 Years</label><br>
+  <label><input type="radio" name="Age_Range" value="60-75"> 60 to 75 Years</label><br>
+  <label><input type="radio" name="Age_Range" value="Above 76"> 76 Years and above...</label><br>
+
+  <h2>Country of Origin</h2>
+
+  <select name="country">
+    <option value="">-- Select Country --</option>
+  <option>Afghanistan</option>
+  <option>Albania</option>
+  <option>Algeria</option>
+  <option>Andorra</option>
+  <option>Angola</option>
+  <option>Argentina</option>
+  <option>Armenia</option>
+  <option>Australia</option>
+  <option>Austria</option>
+  <option>Azerbaijan</option>
+  <option>Bahamas</option>
+  <option>Bahrain</option>
+  <option>Bangladesh</option>
+  <option>Barbados</option>
+  <option>Belarus</option>
+  <option>Belgium</option>
+  <option>Belize</option>
+  <option>Benin</option>
+  <option>Bhutan</option>
+  <option>Bolivia</option>
+  <option>Bosnia and Herzegovina</option>
+  <option>Botswana</option>
+  <option>Brazil</option>
+  <option>Brunei</option>
+  <option>Bulgaria</option>
+  <option>Burkina Faso</option>
+  <option>Burundi</option>
+  <option>Cambodia</option>
+  <option>Cameroon</option>
+  <option>Canada</option>
+  <option>Cape Verde</option>
+  <option>Central African Republic</option>
+  <option>Chad</option>
+  <option>Chile</option>
+  <option>China</option>
+  <option>Colombia</option>
+  <option>Comoros</option>
+  <option>Congo</option>
+  <option>Costa Rica</option>
+  <option>Croatia</option>
+  <option>Cuba</option>
+  <option>Cyprus</option>
+  <option>Czech Republic</option>
+  <option>Denmark</option>
+  <option>Djibouti</option>
+  <option>Dominican Republic</option>
+  <option>Ecuador</option>
+  <option>Egypt</option>
+  <option>El Salvador</option>
+  <option>Equatorial Guinea</option>
+  <option>Eritrea</option>
+  <option>Estonia</option>
+  <option>Eswatini</option>
+  <option>Ethiopia</option>
+  <option>Fiji</option>
+  <option>Finland</option>
+  <option>France</option>
+  <option>Gabon</option>
+  <option>Gambia</option>
+  <option>Georgia</option>
+  <option>Germany</option>
+  <option>Ghana</option>
+  <option>Greece</option>
+  <option>Guatemala</option>
+  <option>Guinea</option>
+  <option>Guyana</option>
+  <option>Haiti</option>
+  <option>Honduras</option>
+  <option>Hungary</option>
+  <option>Iceland</option>
+  <option>India</option>
+  <option>Indonesia</option>
+  <option>Iran</option>
+  <option>Iraq</option>
+  <option>Ireland</option>
+  <option>Israel</option>
+  <option>Italy</option>
+  <option>Jamaica</option>
+  <option>Japan</option>
+  <option>Jordan</option>
+  <option>Kazakhstan</option>
+  <option>Kenya</option>
+  <option>Kiribati</option>
+  <option>Kuwait</option>
+  <option>Kyrgyzstan</option>
+  <option>Laos</option>
+  <option>Latvia</option>
+  <option>Lebanon</option>
+  <option>Lesotho</option>
+  <option>Liberia</option>
+  <option>Libya</option>
+  <option>Lithuania</option>
+  <option>Luxembourg</option>
+  <option>Madagascar</option>
+  <option>Malawi</option>
+  <option>Malaysia</option>
+  <option>Maldives</option>
+  <option>Mali</option>
+  <option>Malta</option>
+  <option>Mauritania</option>
+  <option>Mauritius</option>
+  <option>Mexico</option>
+  <option>Moldova</option>
+  <option>Monaco</option>
+  <option>Mongolia</option>
+  <option>Montenegro</option>
+  <option>Morocco</option>
+  <option>Mozambique</option>
+  <option>Myanmar</option>
+  <option>Namibia</option>
+  <option>Nepal</option>
+  <option>Netherlands</option>
+  <option>New Zealand</option>
+  <option>Nicaragua</option>
+  <option>Niger</option>
+  <option>Nigeria</option>
+  <option>North Korea</option>
+  <option>North Macedonia</option>
+  <option>Norway</option>
+  <option>Oman</option>
+  <option>Pakistan</option>
+  <option>Panama</option>
+  <option>Papua New Guinea</option>
+  <option>Paraguay</option>
+  <option>Peru</option>
+  <option>Philippines</option>
+  <option>Poland</option>
+  <option>Portugal</option>
+  <option>Qatar</option>
+  <option>Romania</option>
+  <option>Russia</option>
+  <option>Rwanda</option>
+  <option>Saudi Arabia</option>
+  <option>Senegal</option>
+  <option>Serbia</option>
+  <option>Seychelles</option>
+  <option>Sierra Leone</option>
+  <option>Singapore</option>
+  <option>Slovakia</option>
+  <option>Slovenia</option>
+  <option>Somalia</option>
+  <option>South Africa</option>
+  <option>South Korea</option>
+  <option>South Sudan</option>
+  <option>Spain</option>
+  <option>Sri Lanka</option>
+  <option>Sudan</option>
+  <option>Suriname</option>
+  <option>Sweden</option>
+  <option>Switzerland</option>
+  <option>Syria</option>
+  <option>Taiwan</option>
+  <option>Tajikistan</option>
+  <option>Tanzania</option>
+  <option>Thailand</option>
+  <option>Togo</option>
+  <option>Tonga</option>
+  <option>Trinidad and Tobago</option>
+  <option>Tunisia</option>
+  <option>Turkey</option>
+  <option>Turkmenistan</option>
+  <option>Uganda</option>
+  <option>Ukraine</option>
+  <option>United Arab Emirates</option>
+  <option>United Kingdom</option>
+  <option>United States</option>
+  <option>Uruguay</option>
+  <option>Uzbekistan</option>
+  <option>Venezuela</option>
+  <option>Vietnam</option>
+  <option>Yemen</option>
+  <option>Zambia</option>
+  <option>Zimbabwe</option>
+  </select>
+
+  <h2>Travel Month</h2>
+  <select name="month">
+ <option>January</option>
+ <option>February</option>
+ <option>March</option>
+ <option>April</option>
+ <option>May</option>
+ <option>June</option>
+ <option>July</option>
+ <option>August</option>
+ <option>September</option>
+ <option>October</option>
+ <option>November</option>
+ <option>December</option>
+  </select>
+
+  <h2>Date & Time</h2>
+  <input type="date" name="Date_Of_Travel">
+  <input type="time" name="meeting_time">
+
+  <h2>Lists</h2>
+
+  <h3>This is My Ordered List</h3>
+  <ol>
+    <li>List One</li>
+    <li>List Two</li>
+    <li>List Three</li>
+    <li>List Four</li>
+  </ol>
+
+  <h3>This is My Un-ordered List</h3>
+  <ul>
+    <li>List One</li>
+    <li>List Two</li>
+    <li>List Three</li>
+    <li>List Four</li>
+  </ul>
+
+  <br>
+
+  <input type="submit" value="Submit Form">
+  <input type="reset" value="Reset Form">
+</form>
+
+</body>
+</html>
