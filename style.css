@@ -84,3 +84,12 @@
     font-weight: bold;
     color: darkgreen;
   }
+
+ .table-container {
+  display: flex;
+  gap: 20px; /* space between tables */
+}
+
+.table-container table {
+  width: 50%;
+}
